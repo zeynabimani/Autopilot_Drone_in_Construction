@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/phantom3"
+            android:layout_centerInParent="true"
+            app:civ_border_color="#FF000000" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="75dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHANTOM 3"
+            android:textColor="#1a1c20"
+            android:textStyle="bold"
+            android:textSize="23dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="STANDARD"
+            android:textColor="#1a1c20"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/flight_button"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_btn"
+            android:text="Mission"
+            android:textColor="#f4f4f4"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

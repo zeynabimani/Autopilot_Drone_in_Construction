@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Choose Target Floor"
+        android:textColor="#1a1c20"
+        android:textSize="10pt"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Target floor:"
+            android:textColor="#1a1c20"
+            android:textSize="15dp"></TextView>
+
+        <EditText
+            android:id="@+id/target_floor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#1a1c20"
+            android:inputType="numberDecimal"
+            android:textColor="#1a1c20">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <Switch
+            android:id="@+id/speed_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="100dp"
+            android:track="@drawable/switch_track_style"
+            android:thumb="@drawable/switch_thumb_style"
+            android:fontFamily="sans-serif-condensed"
+            android:switchTextAppearance="@style/SwitchTextAppearance"
+            android:textColor="#fff"
+            android:textOff="SLOW"
+            android:showText="true"
+            android:textOn="FAST"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Set Home Position"
+        android:textColor="#1a1c20"
+        android:textSize="10pt"></TextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Set Home Position by Distance"
+            android:textColor="#1a1c20"
+            android:textSize="15dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Home X dist:"
+                android:textColor="#1a1c20"></TextView>
+
+            <EditText
+                android:id="@+id/set_home_x"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#1a1c20"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="#1a1c20"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Home Y dist:"
+                android:textColor="#1a1c20"></TextView>
+
+            <EditText
+                android:id="@+id/set_home_y"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#1a1c20"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="#1a1c20"></EditText>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            <Button
+                android:id="@+id/set_home_pose_button"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/round_btn"
+                android:text="OK"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="Set Position by Current Pose"
+            android:textColor="#1a1c20"
+            android:textSize="15dp"></TextView>
+
+        <LinearLayout
+            android:id="@+id/floor_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/set_home_pose_by_loc_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:text="Set Home Pose"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/set_qr_pose_by_loc_button"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:text="Set Qr Pose"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Camera Setting"
+        android:textColor="#1a1c20"
+        android:textSize="10pt"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/gimbal_up_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/gimbal_up_btn_sh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="7dp"
+                android:text="gimbal up"
+                android:textColor="#1a1c20"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/gimbal_down_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gimbal_down_btn_sh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="7dp"
+                android:text="gimbal down"
+                android:textColor="#1a1c20"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
